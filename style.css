@@ -1,0 +1,264 @@
+  
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100vh;
+}
+.header{
+  display: flex;
+ height: 25px;
+ justify-content: space-around;
+ padding-top: 5px;
+
+}
+.header{
+display: flex;
+justify-content:space-between;
+padding-top: 3px;
+width: 100%;
+}
+.top{
+  padding-top: 4px;
+}
+/* header left side icons */
+.icons{
+  display: flex;
+  justify-content: space-evenly;
+  padding-inline-start: 110px;
+  column-gap: 10px;
+  
+}
+/* header right side icons */
+.right{
+  display: flex;
+  height: 100%;
+  justify-content: space-evenly;
+  column-gap: 10px;
+
+}
+body{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding-inline: 50px;
+  /* margin-inline: 40px; */
+  height: 100%;
+}
+/* logo image */
+.fimage{
+  display: flex;
+  width: 100%;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+
+}
+/* First navigation links */
+#line{
+  display:flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+  padding-bottom: 6px;
+  
+}
+/* First navigation link text */
+.anker{
+  text-decoration: none;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+
+}
+/* backgrond image */
+.container {
+    position: relative;
+    text-align:justify;
+    width:100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Make the image responsive */
+  .container img {
+    width: 100%;
+    height: 700px;;
+    display: flex;
+    justify-content: center;
+    
+  }
+  .pop{
+    display: flex;
+    position: absolute;
+  top: 30%;
+  left: 28%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgb(10, 2, 2);
+    
+  }
+   /* Style the button and place it in the left-middle of the container/image */
+   .container .btn {
+    position: absolute;
+    bottom: 50%;
+    left: 28%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color:bisque;
+    color: black;
+    font-size: 12px;
+    padding: 12px 24px;
+    border: 5%;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  /* response to button over */
+  .container .btn:hover {
+    background-color: palegoldenrod;
+  }
+  /* all figure text align center */
+  figure{
+    text-align: center;
+  }
+  /* to add text between a line */
+  h2 {
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid #000; 
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+ } 
+ /* to add text between a line */
+ h2 span{ 
+     background:#fff; 
+     padding:0 10px; 
+ }
+ .follow{
+  padding-top: 100px;
+ }
+  /* images below background  */
+  .mimg{
+    display: flex;
+    padding-block-start: 10px;
+    justify-content: space-evenly;
+    padding-block-end: 30px;
+  
+  }
+  /* chevron img */
+  .best{
+    display: flex;
+    justify-content: center;
+    height: 20px;
+  }
+  /* best seller div */
+ .best_sellers{
+  display: flex;
+  height: 300px;
+  justify-content: space-evenly;
+  padding-block-start: 10px;
+ }
+ /* quick view links */
+ .quick{
+  text-decoration: none;
+  border: 1px none rgb(235, 229, 229);
+  color: rgb(86, 84, 84);
+  background-color: rgb(221, 215, 215);
+  padding-block: 6px;
+  padding-inline: 6px;
+ }
+ /* figure caption */
+ .cap{
+  padding-block-end: 15px;
+ }
+ /* pictures on instagram */
+ .end{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 600px;
+  flex-wrap: wrap;
+  gap: 10px;
+  
+  
+ }
+ /* line */
+ .ooo{
+  border-bottom: 1px solid #000;
+  margin-block-start: 20px;
+  margin-block-end: 20px;
+ }
+ /* footer navs */
+ #ft{
+  display:flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+  padding-bottom: 6px;
+ }
+ /* links in footer */
+.ftrr{
+  text-decoration: none;
+  color: #605b5b;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+footer p{
+  display: flex;
+  justify-content: center;
+  padding-block-start: 20px;
+  padding-block-end: 20px;
+  
+}
+
+@media (max-width: 768px) {
+  /* CSS rules for screens with a maximum width of 768px or less */
+
+  /* Adjustments for the header */
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+  }
+
+  /* Adjustments for the header icons */
+  .icons {
+    padding-inline-start: 0;
+    justify-content: center;
+  }
+
+  /* Adjustments for the container */
+  .container img {
+    height: 400px;
+  }
+
+  .pop {
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .container .btn {
+    bottom: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* Adjustments for the footer navigation links */
+  #ft {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
+
+
+
+
+  
